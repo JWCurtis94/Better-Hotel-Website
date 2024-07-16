@@ -12,7 +12,7 @@ header h1 {
     font-size: 2.5rem;
 }
 
-#about img, #rooms img {
+#about img, #rooms img{
     width: 100%;
     height: auto;
 }
