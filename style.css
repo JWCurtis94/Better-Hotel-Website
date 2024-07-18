@@ -1,22 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 header.jumbotron {
-    background: #f8f9fa;
-    color: black;
-    padding: 2rem;
+    background: url('https://example.com/header-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+header.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
-#about img, #rooms img{
+header p {
+    font-size: 1.2rem;
+}
+
+header .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+#about img, #rooms img {
     width: 100%;
     height: auto;
 }
 
 footer {
     background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.text-center {
+    text-align: center;
 }
